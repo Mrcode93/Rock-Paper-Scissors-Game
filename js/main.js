@@ -136,9 +136,8 @@ if (localStorage.getItem("lose") === null) {
     lose = [];
 } else {
     lose = JSON.parse(localStorage.getItem("lose"));
-    counter.innerHTML = Number(win.length) + " : " + Number(lose.length);
 }
-
+counter.innerHTML = Number(win.length) + " : " + Number(lose.length);
 if (Number(win.length) >= 5) {
     newGame.style.cssText = "top: 0;left: 0; width: 100%;height: 100%;opacity: 1";
     message.innerText = "Congratulations! You win!";
