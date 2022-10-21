@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!-- Last edited by Arun Banik @ https://encodedna.com -->
+<Library>
+  <List>
+    <code>1</code>
+    <BookName>Computer Architecture</BookName>
+    <Category>Computers</Category>
+    <Price>125.60</Price>
+</List>
+<List>
+    <code>2</code>
+    <BookName>Advanced Composite Materials</BookName>
+    <Category>Science</Category>
+    <Price>172.56</Price>
+</List>
+ <List>
+    <code>3</code>
+    <BookName>Asp.Net 4 Blue Book</BookName>
+    <Category>Programming</Category>
+    <Price>56.00</Price>
+ </List>
+</Library>
