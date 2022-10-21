@@ -12,9 +12,6 @@ closeLay.onclick = () => {
     roleLay.classList.remove("active");
 };
 
-////////////////////!/
-
-////////////////////!/
 //count the result
 let counter = document.querySelector(".score p");
 
@@ -127,17 +124,21 @@ let start = document.querySelector("#yes");
 let end = document.querySelector("#no");
 let win;
 let lose;
-if (
-    localStorage.getItem("marks") === null ||
-    localStorage.getItem("lose") === null
-) {
+if (localStorage.getItem("marks") === null) {
     win = [];
     lose = [];
 } else {
     win = JSON.parse(localStorage.getItem("marks"));
     lose = JSON.parse(localStorage.getItem("lose"));
+    counter.innerHTML = Number(win.length);
+}
+if (localStorage.getItem("lose") === null) {
+    lose = [];
+} else {
+    lose = JSON.parse(localStorage.getItem("lose"));
     counter.innerHTML = Number(win.length) + " : " + Number(lose.length);
 }
+
 if (Number(win.length) >= 5) {
     newGame.style.cssText = "top: 0;left: 0; width: 100%;height: 100%;opacity: 1";
     message.innerText = "Congratulations! You win!";
