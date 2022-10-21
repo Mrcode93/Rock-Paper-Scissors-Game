@@ -472,7 +472,7 @@ header {
         @include flex;
         position: relative;
         gap: 30px;
-        margin-top: 80px;
+        margin-top: 40px;
         position: relative;
         // padding: 10px 0;
         .box {
@@ -534,7 +534,7 @@ header {
         }
         .reset {
             position: absolute;
-            bottom: -250px;
+            bottom: -150px;
             @include flex;
             flex-direction: column;
             width: 90%;
